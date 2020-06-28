@@ -169,7 +169,7 @@ h4.rotate a:hover {background: #ff9b29; color: #000; }
 .platinum-bg {background-image: url(images/web-plan-platinum-bg1.jpg)!important; }
 .gold-bg {background-image: url(images/web-plan-gold-bg1.jpg)!important; }
 .bronz-bg {background-image: url(images/web-plan-bronz-bg1.jpg)!important; }
-/****gallery row****/.gall-row {background-image: url(images/top_bg_zz.jpg); color: #ffffff; background-position: center center; }
+/****gallery row****/.gall-row {background-image: url(images/about-us-bg1.jpg); color: #ffffff; background-position: center center; }
 .gall-row .overlay {background-color: rgba(0, 0, 0, 0.54); padding: 200px 0 100px 0; }
  .gall-row h1 span {color: #eaac09; border: 2px solid #ffffff; padding: 12px 45px; display: inline-block; }
 .gall-row h1::before,.gall-row h1::after {display: inline-block; content: ""; border-top: .2rem solid #ffffff; width: 4rem; margin: 0 1rem; transform: translateY(-1rem); }
