@@ -11,17 +11,68 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;display=swap" rel="stylesheet">
 		<link rel='dns-prefetch' href='http://ajax.googleapis.com/' />
 		<link rel='dns-prefetch' href='http://s.w.org/' />
-		<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min7661.css?ver=5.4.2' type='text/css' media='all' />
-		<link rel='stylesheet' id='contact-form-7-css'  href='wp-content/plugins/contact-form-7/includes/css/styles6725.css?ver=5.1.7' type='text/css' media='all' />
-		<link rel='stylesheet' id='pmpro_frontend-css'  href='wp-content/plugins/paid-memberships-pro/css/frontend95b8.css?ver=2.3.2' type='text/css' media='screen' />
-		<link rel='stylesheet' id='pmpro_print-css'  href='wp-content/plugins/paid-memberships-pro/css/print95b8.css?ver=2.3.2' type='text/css' media='print' />
 		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>
-		<script type='text/javascript' src='wp-content/plugins/theme-my-login/modules/themed-profiles/themed-profiles7661.js?ver=5.4.2'></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 				
 	<style> 
 	.second_menu:hover {
 		background-color: black;
+	}
+	td, th {
+		border: 1px solid #999;
+		padding: 0.5rem;
+	}
+	.table-hover :hover {
+		background-color:  #eaac09;
+	}
+	@media 
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		th { 
+			font-weight:bold !important;
+			word-wrap: break-word;
+		}
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%; 
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+		/*
+		Label the data
+		*/
+		td:nth-of-type(1):before { content: "Event"; }
+		td:nth-of-type(2):before { content: "Award"; }
+		td:nth-of-type(3):before { content: "Year"; }
 	}
 	</style>
 		
@@ -40,7 +91,7 @@
 						<li class="has_childern"><a href="#">GALLERY +</a>
 							<ul>
 								<li class="second_menu"><a href="shots.html">Pictures</a></li>
-								<li class="second_menu"><a href="performances.html">Performances</a></li>
+								<li class="second_menu"><a href="performances.html">Gigs</a></li>
 								<li class="second_menu"><a href="ghazals.html">Ghazals</a></li>
 								<li class="second_menu"><a href="awards.html">Awards</a></li>
 								<li class="second_menu"><a href="bts.html">Behind The Scenes</a></li>
@@ -49,14 +100,11 @@
 						</li>							
 					</ul>
 				</nav>
-				<nav class="nav-mob">
+				<nav class="nav-mob right" style="margin-right:10px; margin-bottom:10px;">
 					<div class="mob-menu">
 						<div class="bar1"></div>
 						<div class="bar2"></div>
 						<div class="bar3"></div>
-					</div>
-					<div class="pro_img">
-						<img src="wp-content/themes/sithara_home/images/profile-bg2.png" alt="profile">
 					</div>
 					<div class="mob_nav_menu">
 						<ul class="row mob_nav_menu_in">
@@ -65,7 +113,7 @@
 							<li class="has_childern"><a href="#">GALLERY +</a>
 								<ul>
 									<li class="second_menu"><a href="shots.html">Pictures</a></li>
-									<li class="second_menu"><a href="performances.html">Performances</a></li>
+									<li class="second_menu"><a href="performances.html">Gigs</a></li>
 									<li class="second_menu"><a href="ghazals.html">Ghazals</a></li>
 									<li class="second_menu"><a href="awards.html">Awards</a></li>
 									<li class="second_menu"><a href="bts.html">Behind The Scenes</a></li>
@@ -88,26 +136,175 @@
 		</section> 
 		<section class="clearfix com60">
 			<div class="container rsm-container"> 
-			
-								<div class="row-three">	
-								
+				<div class="row-three">	
 					<article class="row cat-post-single">
 						<a href="wp-content/themes/sithara_home/images/awards/sithara_awards_05_mini.jpg" target="_blank"><img src="wp-content/themes/sithara_home/images/awards/sithara_awards_05_mini.jpg" class="attachment-post-thumbnail size-post-thumbnail"/></a>						
 					</article>
 				</div>
-								<div class="row-three">
+				<div class="row-three">
 					<article class="row cat-post-single">
 						<a href="wp-content/themes/sithara_home/images/awards/sithara_awards_03_mini.jpg" target="_blank"><img src="wp-content/themes/sithara_home/images/awards/sithara_awards_03_mini.jpg" class="attachment-post-thumbnail size-post-thumbnail"/></a>						
 					</article>
 				</div>
-								<div class="row-three">
+				<div class="row-three">
 					<article class="row cat-post-single">
 						<a href="wp-content/themes/sithara_home/images/awards/sithara_awards_14_mini.jpg" target="_blank"><img src="wp-content/themes/sithara_home/images/awards/sithara_awards_14_mini.jpg" class="attachment-post-thumbnail size-post-thumbnail"/></a>						
 					</article>
 				</div>
 				<div class="center row clearfix">
 				</div>
-				<h4 class="ttu"><a href="https://en.wikipedia.org/wiki/Sithara_(singer)#Awards" target="_blank" class="a-span">All <span>Awards...</span></a></h4>
+			</div>
+		</section>
+		<section class="a-row center com60">
+			<div class="container com60">
+				<div class="row">
+					<table style="width:100%">
+						<thead class="ttu">
+							<tr>
+								<th>Event</th>
+								<th>Award</th>
+								<th>Year</th>
+							</tr>
+						</thead>
+						<tbody class="table-hover">
+							<tr>
+								<td>Movie Street Film Awards</td>
+								<td>Best Female Playback Singer</td>
+								<td>2020</td>
+							</tr>
+							<tr>
+								<td>Muzic2morrow Awards</td>
+								<td>Best Female Singer</td>
+								<td>2020</td>
+							</tr>
+							<tr>
+								<td>Johnson Music Awards</td>
+								<td>Best Playback Singer</td>
+								<td>2019</td>
+							</tr>
+							<tr>
+								<td>Mazhavil Music Awards</td>
+								<td>Best Female Playback Singer - Madhura Raja - "Mohamundiri"</td>
+								<td>2019</td>
+							</tr>
+							<tr>
+								<td>Mirchi Music Awards South</td>
+								<td>Best Female Playback Singer in Malayalam - Kumbalangi Nights - "Cherathukal"</td>
+								<td>2019</td>
+							</tr>
+							<tr>
+								<td>South Indian International Movie Awards</td>
+								<td>Best Female Playback Singer – Eeda – "Marivil"</td>
+								<td>2019</td>
+							</tr>
+							<tr>
+								<td>Anand TV Awards</td>
+								<td>Best Female Playback Singer</td>
+								<td>2018</td>
+							</tr>
+							<tr>
+								<td>Janmabhumi Film Awards</td>
+								<td>Best Female Playback Singer - Eeda - "Marivil"</td>
+								<td>2018</td>
+							</tr>
+							<tr>
+								<td>Red FM Malayalam Music Awards</td>
+								<td>Best Female Playback Singer</td>
+								<td>2017</td>
+							</tr>
+							<tr>
+								<td>Yuva Awards</td>
+								<td>Best Female Playback Singer</td>
+								<td>2017</td>
+							</tr>
+							<tr>
+								<td>Mangalam Music Awards</td>
+								<td>Best Female Playback Singer - Eeda - "Marivil"</td>
+								<td>2017</td>
+							</tr>
+							<tr>
+								<td>Asiavision Awards</td>
+								<td>Best Singer(Female) – Udaharanam Sujatha – "Ethu Mazhayilum"</td>
+								<td>2017</td>
+							</tr>
+							<tr>
+								<td>Kerala State Film Awards</td>
+								<td>Best Singer – Vimaanam – "Vaanamakalunnuvo"</td>
+								<td>2017</td>
+							</tr>
+							<tr>
+								<td>Federation of Kerala Associations in North America Awards</td>
+								<td>Best Female Playback Singer – Lailaa O Lailaa – "Nanayumee Mazhai"</td>
+								<td>2016</td>
+							</tr>
+							<tr>
+								<td>Anand TV Awards</td>
+								<td>Best Female Playback Singer</td>
+								<td>2016</td>
+							</tr>
+							<tr>
+								<td>Asianet Film Awards</td>
+								<td>Most Popular Duet Song – Jacobinte Swargarajyam – "Thiruvavani raavu"</td>
+								<td>2016</td>
+							</tr>
+							<tr>
+								<td>South Indian International Movie Awards</td>
+								<td>Best Female Playback Singer – Mr. Fraud – "Sadaa Paalaya"</td>
+								<td>2014</td>
+							</tr>
+							<tr>
+								<td>Inspire Film Award</td>
+								<td>Best Playback Singer</td>
+								<td>2012</td>
+							</tr>
+							<tr>
+								<td>L Channel Award</td>
+								<td>Best Playback Singer</td>
+								<td>2012</td>
+							</tr>
+							<tr>
+								<td>Kannur Rajan Memorial Award</td>
+								<td>Best Playback Singer</td>
+								<td>2012</td>
+							</tr>
+							<tr>
+								<td>Mirchi Music Awards South</td>
+								<td>Best Female Playback Singer in Tamil – Muppozhudhum Un Karpanaigal – "Kangal Neeye"</td>
+								<td>2012</td>
+							</tr>
+							<tr>
+								<td>Kerala State Film Awards</td>
+								<td>Best Singer – Celluloid – "Enundodee"</td>
+								<td>2012</td>
+							</tr>
+							<tr>
+								<td>Vayalar Samskarika Vedi Award</td>
+								<td>Best Playback Singer</td>
+								<td>2011</td>
+							</tr>
+							<tr>
+								<td>Mohammed Rafi Memorial Award</td>
+								<td>Best Playback Singer</td>
+								<td>2011</td>
+							</tr>
+							<tr>
+								<td>Drishya Award</td>
+								<td>Best Female Album Singer</td>
+								<td>2009</td>
+							</tr>
+							<tr>
+								<td>Swaralaya Kairali Yesudas Award</td>
+								<td>Best Singer</td>
+								<td>2004</td>
+							</tr>
+							<tr>
+								<td>Baburaj Memorial Award</td>
+								<td>Best Female Singer</td>
+								<td>2002</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -125,16 +322,7 @@
 					<div class="row-sixty">						
 						<div class="row">							
 							<div class="row-half plft30">								
-								<!-- <h3>Site Map</h3>								 -->
-								<!-- <hr color="#e2b505">								 -->
-								<!-- <ul class="cnt-ul">									 -->
-									<!-- <li><a href="about-our-company.html">About Our Company</a></li> 				 -->
-									<!-- <li><a href="privacy-policy.html">Privacy Policy</a></li> 				 -->
-									<!-- <li><a href="intellectual-property.html">Intellectual Property</a></li> 				 -->
-									<!-- <li><a href="terms-and-conditions.html">Terms And Conditions</a></li> 				 -->
-									<!-- <li><a href="refund-and-cancellation-policy.html">Refund and Cancellation Policy</a></li> 	 -->
-									<!-- <li><a href="contactus.html">Contact Us</a></li>										 -->
-								<!-- </ul>							 -->
+								
 							</div>							
 							<div class="row-half plft30">								
 								<h3>Quick Contact</h3>								
@@ -338,8 +526,7 @@ var sticky,checked=!1;
 				});
 			});
 		</script>
-		
-<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts6725.js?ver=5.1.7'></script>
+	
 <a href="#0" class="dew-top">Top</a>
 	</body>
 
