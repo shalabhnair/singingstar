@@ -191,11 +191,15 @@ h4.rotate a:hover {background: #ff9b29; color: #000; }
 .abt-inner h2 {color: #000000; letter-spacing: 5px; }
  .about-sldr {background-image: url(images/abtsldra2.jpg); }
 .abt-one {background-image: url(images/abt1.jpg); position: relative; height: 100vh; }
-.abt-two {background-image: url(images/abt3.jpg); position: relative; height: 100vh; }
+.abt-two {background-image: url(images/abt2.jpg); position: relative; height: 100vh; }
+.abt-three {background-image: url(images/abt3.jpg); position: relative; height: 100vh; }
+.abt-four {background-image: url(images/abt4.jpg); position: relative; height: 100vh; }
 .abt-panel {background-color: #000000; color: #ffffff; padding: 30px 15px; max-width: 350px; position: absolute; bottom: 90px; }
 .abt-panel p {color: #a8a8a8; }
 .abt-one .abt-panel {left: 250px}
 .abt-two .abt-panel {right: 250px}
+.abt-three .abt-panel {left: 250px}
+.abt-four .abt-panel {right: 250px}
 .gall-a {color: #ffffff; background-color: #000000; padding: 3px 15px; background-color: #202845; }
 .gall-row .top-btn a {background-color: #37305e; }
  .gall-row .top-btn {margin-bottom: -32px; }
